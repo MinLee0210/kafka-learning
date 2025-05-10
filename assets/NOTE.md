@@ -24,3 +24,10 @@
 6. **Phase 6: Documentation and Deployment**
    - Complete project documentation.
    - Prepare for deployment and ensure all components are production-ready.
+
+---
+
+# REFERENCE
+
+1. https://github.com/conduktor/kafka-stack-docker-compose
+2. https://github.com/ramosITBooks/KafkaAndRabbitMQBooks.git
