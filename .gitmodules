@@ -1,0 +1,9 @@
+[submodule "kafka-producer"]
+	path = kafka-producer
+	url = git@github.com:8Opt/kafka-producer.git
+[submodule "kafka-listener"]
+	path = kafka-listener
+	url = git@github.com:8Opt/kafka-listener.git
+[submodule "kafka-client"]
+	path = kafka-client
+	url = git@github.com:8Opt/kafka-client.git
