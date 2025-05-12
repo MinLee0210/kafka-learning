@@ -1,8 +1,8 @@
 # TODOS
 
 ## Init 
-- [ ] Install and configure Apache Kafka.
-  - [ ] Verify installation by running a simple producer-consumer test.
+- [x] Install and configure Apache Kafka.
+  - [x] Verify installation by running a simple producer-consumer test.
 - [ ] Set up and test Kafka clusters.
   - [ ] Configure Zookeeper for cluster management.
   - [ ] Ensure high availability and fault tolerance.
@@ -10,14 +10,14 @@
 ## Project
 
 ### Producer
-- [ ] Develop and test Kafka producer (send random messages).
-  - [ ] Implement a basic producer to send test messages.
-  - [ ] Integrate logging to monitor message flow.
+- [x] Develop and test Kafka producer (send random messages).
 - [ ] Frame reader and send to cluster.
   - [ ] Implement frame extraction logic.
   - [ ] Ensure frames are correctly serialized before sending.
+- [ ] Integrate logging to monitor message flow.
 
 ### Listener
+- [x] Develop and test Kafka listener (receive random messages).
 - [ ] Develop AI models for object detection.
   - [ ] Research and select appropriate models for human and car detection.
   - [ ] Train models using a suitable dataset.
@@ -26,11 +26,14 @@
   - [ ] Set up listeners to consume messages from relevant topics.
   - [ ] Implement logic to process frames and detect objects.
   - [ ] Write detection results to new Kafka topics.
+- [ ] Integrate logging to monitor message flow.
 
 ### Client
 - [ ] Develop and test Kafka client.
   - [ ] Implement client to read from specific topics.
   - [ ] Ensure client can handle data processing and visualization.
+
+- [ ] Integrate logging to monitor message flow.
 
 ### QA/QC
 - [ ] Conduct end-to-end testing.
