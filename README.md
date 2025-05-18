@@ -1,6 +1,10 @@
-# kafka-learning
+<div style="text-align: center;">
 
-This project is focused on learning and implementing Apache Kafka for real-time data processing. The main components of the project include a Kafka producer, a set of AI models acting as Kafka listeners, and a Kafka client.
+<h1>Kafka Learning</h1>
+<img src="assets/static/kafka.png" alt="Lesson 1" width="50%">
+</div>
+
+This project is focused on learning and implementing Apache Kafka for real-time data processing. The main components of the project include a Kafka producer, a set of AI models acting as Kafka listeners, and a Kafka client. Additionally, the project will use logging stacks to monitor the data flow and performance of the system. I also use multiple programming languages, such as Python, Rust, and Go to implement the different components of the project to show that the Kafka ecosystem is not limited to a single programming language and as the project is built to be extensible and scalable.
 
 ## Project Components
 
@@ -57,17 +61,34 @@ graph TD
 
 ## Usage
 
-1. **Start Kafka Cluster**
-   - Ensure your Kafka cluster is running.
+### Init submodules
+```bash
+git submodule update --init --recursive
+```
 
-2. **Run Kafka Producer**
-   - Execute the Kafka producer to start sending frames to the Kafka cluster.
+### Run Kafka
 
-3. **Deploy AI Models**
-   - Deploy the AI models to start listening to the Kafka topics and processing data.
+Run Kafka using docker-compose
 
-4. **Use Kafka Client**
-   - Use the Kafka client to read from the relevant topics and access the processed data.
+```bash
+docker-compose -f docker-compose.kafka.yml up -d
+```
+
+Turn it off using:
+
+```bash
+docker-compose -f docker-compose.kafka.yml down
+```
+
+_Remember:_ the terminal must point to the root directory of the project to run the above commands.
+
+### Run Kafka Producer
+
+```bash
+python kafka-producer/main.py --video_name rtsp://admin:admin@192.168.1.64:554/Streaming/Channel/101
+```
+
+_Remember:_ the terminal must point to the root directory of the project to run the above commands.
 
 ## Contributing
 
