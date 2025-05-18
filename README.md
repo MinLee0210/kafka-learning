@@ -1,8 +1,15 @@
-<div style="text-align: center;">
 
-<h1>Kafka Learning</h1>
-<img src="assets/static/kafka.png" alt="Lesson 1" width="50%">
-</div>
+<h1 align="center">Kafka Learning</h1>
+
+<p align="center">
+  <img src="assets/static/kafka.png" width="180" >
+</p>
+
+<p align="center">
+  <em>Collection of notes learning Apache Kafka.</em>
+</p>
+
+
 
 This project is focused on learning and implementing Apache Kafka for real-time data processing. The main components of the project include a Kafka producer, a set of AI models acting as Kafka listeners, and a Kafka client. Additionally, the project will use logging stacks to monitor the data flow and performance of the system. I also use multiple programming languages, such as Python, Rust, and Go to implement the different components of the project to show that the Kafka ecosystem is not limited to a single programming language and as the project is built to be extensible and scalable.
 
@@ -82,13 +89,11 @@ docker-compose -f docker-compose.kafka.yml down
 
 _Remember:_ the terminal must point to the root directory of the project to run the above commands.
 
-### Run Kafka Producer
 
-```bash
-python kafka-producer/main.py --video_name rtsp://admin:admin@192.168.1.64:554/Streaming/Channel/101
-```
+### Lessons
 
-_Remember:_ the terminal must point to the root directory of the project to run the above commands.
+- [Lesson 1: Kafka Introduction](assets/lessons/lesson1.md)
+
 
 ## Contributing
 
